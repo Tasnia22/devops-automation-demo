@@ -2,15 +2,289 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First DevOps Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Tasnia Rahman</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f9; padding: 50px; }
-        h1 { color: #0078d4; }
-        .success { color: green; font-weight: bold; }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#f8f9ff;
+            padding:40px 10%;
+            color:#333;
+        }
+
+        .about{
+            max-width:1200px;
+            margin:auto;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .section-title h1{
+            font-size:55px;
+            color:#1d1678;
+        }
+
+        .section-title p{
+            color:#666;
+            font-size:18px;
+            margin-top:10px;
+        }
+
+        .about-container{
+            display:flex;
+            gap:50px;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        .profile{
+            flex:1;
+            text-align:center;
+        }
+
+        .profile img{
+            width:320px;
+            height:320px;
+            border-radius:50%;
+            object-fit:cover;
+            border:8px solid white;
+            box-shadow:0 15px 40px rgba(0,0,0,.15);
+        }
+
+        .content{
+            flex:2;
+        }
+
+        .content h2{
+            font-size:42px;
+            color:#1d1678;
+        }
+
+        .content span{
+            color:#5b63ff;
+        }
+
+        .tagline{
+            margin:10px 0 20px;
+            color:#ff4d8d;
+            font-weight:600;
+        }
+
+        .content p{
+            line-height:1.8;
+            margin-bottom:15px;
+        }
+
+        .badges{
+            margin-top:20px;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:10px 18px;
+            border-radius:30px;
+            background:white;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+            margin:5px;
+        }
+
+        .stats{
+            margin-top:50px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 5px 20px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card i{
+            font-size:35px;
+            color:#5b63ff;
+            margin-bottom:15px;
+        }
+
+        .interests{
+            margin-top:60px;
+        }
+
+        .interests h2{
+            margin-bottom:25px;
+            color:#1d1678;
+        }
+
+        .interest-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .interest-box{
+            background:white;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,.08);
+        }
+
+        .quote{
+            margin-top:60px;
+            background:white;
+            padding:35px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 5px 20px rgba(0,0,0,.08);
+        }
+
+        .quote h3{
+            color:#5b63ff;
+            margin-bottom:10px;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:40px;
+            font-size:18px;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello World! Welcome to My Website</h1>
-    <p class="success">✓ This website was deployed automatically using a GitHub Actions DevOps Pipeline!</p>
+
+<section class="about">
+
+    <div class="section-title">
+        <h1>About Me</h1>
+        <p>Get to know me a little better! ✨</p>
+    </div>
+
+    <div class="about-container">
+
+        <div class="profile">
+            <img src="profile.jpg" alt="Tasnia">
+        </div>
+
+        <div class="content">
+            <h2>Hi, I'm <span>Tasnia Rahman</span></h2>
+
+            <p class="tagline">
+                CSE Student | Robotics Enthusiast | Aspiring Engineer
+            </p>
+
+            <p>
+                I am a passionate Computer Science and Engineering student
+                with strong interests in Robotics, Artificial Intelligence,
+                Embedded Systems, and Web Development.
+            </p>
+
+            <p>
+                I enjoy transforming ideas into real-world solutions through
+                technology and creativity. My goal is to become a skilled
+                Software Engineer and Robotics Researcher.
+            </p>
+
+            <div class="badges">
+                <span class="badge">🎯 Goal-Oriented</span>
+                <span class="badge">🧠 Quick Learner</span>
+                <span class="badge">✨ Problem Solver</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>CSE Student</h3>
+            <p>Learning & Growing Everyday</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Projects</h3>
+            <p>Robotics, AI & Web Development</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-trophy"></i>
+            <h3>Achievements</h3>
+            <p>Competitions & Certifications</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-heart"></i>
+            <h3>Passionate</h3>
+            <p>Innovation & Technology</p>
+        </div>
+
+    </div>
+
+    <div class="interests">
+
+        <h2>I'm Interested In</h2>
+
+        <div class="interest-grid">
+
+            <div class="interest-box">
+                🤖 Robotics
+            </div>
+
+            <div class="interest-box">
+                🧠 AI & Machine Learning
+            </div>
+
+            <div class="interest-box">
+                🌐 Web Development
+            </div>
+
+            <div class="interest-box">
+                ⚙ Embedded Systems
+            </div>
+
+            <div class="interest-box">
+                💡 Problem Solving
+            </div>
+
+            <div class="interest-box">
+                📚 Lifelong Learning
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="quote">
+        <h3>"The best way to predict the future is to create it."</h3>
+        <p>— Peter Drucker</p>
+    </div>
+
+    <footer>
+        Thanks for visiting! Let's build something amazing together 🚀
+    </footer>
+
+</section>
+
 </body>
 </html>
